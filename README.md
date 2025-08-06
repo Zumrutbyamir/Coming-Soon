@@ -114,12 +114,12 @@
       color: #f9f6f1;
     }
 
-    .diamond {
+    .diamonds {
       position: fixed;
       top: -50px;
       width: 10px;
       height: 10px;
-      background-color: #054634;
+      background-color: #2f6b3e;
       transform: rotate(45deg);
       opacity: 0.8;
       animation: fall 8s linear infinite;
