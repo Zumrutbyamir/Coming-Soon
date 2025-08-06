@@ -188,14 +188,12 @@
     <input type="email" name="email" placeholder="Enter your email" required />
     <button type="submit">Notify Me</button>
   </form>
-
-  <!-- White social icons -->
-  <div class="socials">
-    <a href="https://wa.me/923140432352" target="_blank"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/zumrutbyamir" target="_blank"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/share/1Aq5n8bFmP" target="_blank"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank"><i class="fab fa-tiktok"></i></a>
-  </div>
+  <div class="white-social-icons">
+        <a href="https://wa.me/923140432352" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/whatsapp.png" alt="WhatsApp"/></a>
+        <a href="https://www.instagram.com/zumrutbyamir" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/instagram-new.png" alt="Instagram"/></a>
+        <a href="https://www.facebook.com/share/1Aq5n8bFmP" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/facebook-new.png" alt="Facebook"/></a>
+        <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/tiktok--v1.png" alt="TikTok"/></a>
+      </div>
 
   <div class="countdown">
     Launching in <span id="timer">Loading...</span>
