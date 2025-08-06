@@ -119,7 +119,7 @@
       top: -50px;
       width: 10px;
       height: 10px;
-      background-color: #50c878;
+      background-color: #054634;
       transform: rotate(45deg);
       opacity: 0.8;
       animation: fall 8s linear infinite;
@@ -189,10 +189,10 @@
     <button type="submit">Notify Me</button>
   </form>
   <div class="white-social-icons">
-        <a href="https://wa.me/923140432352" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/whatsapp.png" alt="WhatsApp"/></a>
-        <a href="https://www.instagram.com/zumrutbyamir" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/instagram-new.png" alt="Instagram"/></a>
-        <a href="https://www.facebook.com/share/1Aq5n8bFmP" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/facebook-new.png" alt="Facebook"/></a>
-        <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank"><img src="https://img.icons8.com/ios-filled/50/3e503c/tiktok--v1.png" alt="TikTok"/></a>
+        <a href="https://wa.me/923140432352" target="_blank"><img src="https://img.icons8.com/color/ios-filled/50/f9f6f1/whatsapp.png" alt="WhatsApp"/></a>
+        <a href="https://www.instagram.com/zumrutbyamir" target="_blank"><img src="https://img.icons8.com/color/ios-filled/50/f9f6f1/instagram-new.png" alt="Instagram"/></a>
+        <a href="https://www.facebook.com/share/1Aq5n8bFmP" target="_blank"><img src="https://img.icons8.com/color/ios-filled/50/f9f6f1/facebook-new.png" alt="Facebook"/></a>
+        <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank"><img src="https://img.icons8.com/color/ios-filled/50/f9f6f1/tiktok--v1.png" alt="TikTok"/></a>
       </div>
 
   <div class="countdown">
