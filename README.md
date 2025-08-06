@@ -5,8 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zümrüt - Coming Soon</title>
 
-  <!-- ✅ Font Awesome for social icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-y+mGHh/fA7gYqWc9rg9XW+8GspBQ7yya6wU1yx2loA+Hh7uQvfxALaSzPpW2zHyGkXwQ8YvD2Wz0C2Ix1kSfZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ✅ Latest Font Awesome for working icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-dTfgeWTVM0yPZgkM7Lr3oIVsQJD5OQOmaN01g9J70plWQx41JrCrV6BGQ03UPACiQFtx+hJxU5x2WYkDPTK8lg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
 
   <style>
     body {
@@ -28,8 +34,10 @@
     .overlay {
       background-color: rgba(5, 70, 52, 0.85);
       position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
       z-index: -1;
     }
 
@@ -43,7 +51,6 @@
       max-width: 500px;
       margin: 0 auto 2em;
       font-size: 1.1em;
-      color: #f9f6f1;
     }
 
     form {
@@ -87,11 +94,11 @@
     }
 
     .socials a {
-      margin: 0 12px;
+      margin: 0 15px;
       color: #d4af37;
-      font-size: 1.8em;
+      font-size: 2em;
       text-decoration: none;
-      transition: transform 0.3s;
+      transition: transform 0.3s ease;
     }
 
     .socials a:hover {
@@ -107,17 +114,6 @@
       color: #f9f6f1;
     }
 
-    @media (max-width: 500px) {
-      h1 {
-        font-size: 2em;
-      }
-
-      input[type="email"] {
-        width: 100%;
-      }
-    }
-
-    /* Falling Diamond Animation */
     .diamond {
       position: fixed;
       top: -50px;
@@ -143,7 +139,6 @@
   </style>
 
   <script>
-    // Countdown Timer
     function countdown() {
       const launchDate = new Date("2025-08-14T00:00:00").getTime();
       const timer = setInterval(function () {
@@ -166,7 +161,6 @@
       }, 1000);
     }
 
-    // Falling Diamonds
     function createDiamonds() {
       for (let i = 0; i < 40; i++) {
         let diamond = document.createElement('div');
