@@ -191,15 +191,15 @@
     Launching in <span id="timer">Loading...</span>
   </div>
 
-  <div class="socials">
-    <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-    <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-    <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-    <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-  </div>
+<div class="socials">
+  <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+  <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+</div>
 
   <footer>
-    2006 Zümrüt by Amir. All rights reserved.
+    @2006 Zümrüt by Amir. All rights reserved.
   </footer>
 </body>
 </html>
