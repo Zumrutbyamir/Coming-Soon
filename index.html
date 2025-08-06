@@ -95,7 +95,7 @@
 
     .socials a {
       margin: 0 15px;
-      color: #ffffff;
+      color: #d4af37;
       font-size: 2em;
       text-decoration: none;
       transition: transform 0.3s ease;
