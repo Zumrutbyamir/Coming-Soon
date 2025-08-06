@@ -114,7 +114,7 @@
       color: #f9f6f1;
     }
 
-    .diamonds {
+    .diamond {
       position: fixed;
       top: -50px;
       width: 10px;
