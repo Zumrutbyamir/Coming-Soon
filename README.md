@@ -4,28 +4,27 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zümrüt - Coming Soon</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       margin: 0;
       padding: 0;
       background: #054634 url('khussa-bg.jpg.png') no-repeat center center;
       background-size: cover;
-      font-family: 'Playfair Display', serif;
+      font-family: 'Times New Roman', serif;
       color: #f9f6f1;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
+      overflow-x: hidden;
       text-align: center;
     }
 
     .overlay {
       background-color: rgba(5, 70, 52, 0.8);
-      position: absolute;
+      position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
       z-index: -1;
@@ -76,10 +75,14 @@
     }
 
     .socials a {
-      margin: 0 10px;
+      margin: 0 15px;
       color: #d4af37;
-      font-size: 1.5em;
-      text-decoration: none;
+      font-size: 1.8em;
+      transition: transform 0.3s;
+    }
+
+    .socials a:hover {
+      transform: scale(1.2);
     }
 
     .countdown {
@@ -89,9 +92,13 @@
     }
 
     footer {
-      margin-top: 3em;
+      position: fixed;
+      bottom: 10px;
+      width: 100%;
+      text-align: center;
       font-size: 0.9em;
       color: #f9f6f1;
+      background: transparent;
     }
 
     @media (max-width: 500px) {
@@ -103,8 +110,33 @@
         width: 100%;
       }
     }
+
+    /* Falling Diamonds Animation */
+    .diamond {
+      position: fixed;
+      top: -50px;
+      width: 10px;
+      height: 10px;
+      background-color: #50c878; /* emerald green */
+      transform: rotate(45deg);
+      opacity: 0.8;
+      animation: fall 8s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes fall {
+      0% {
+        top: -50px;
+        opacity: 1;
+      }
+      100% {
+        top: 110%;
+        opacity: 0;
+      }
+    }
   </style>
   <script>
+    // Countdown Timer
     function countdown() {
       const launchDate = new Date("2025-08-14T00:00:00").getTime();
       const timer = setInterval(function () {
@@ -127,11 +159,27 @@
       }, 1000);
     }
 
-    window.onload = countdown;
+    // Generate Falling Diamonds
+    function createDiamonds() {
+      for (let i = 0; i < 40; i++) {
+        let diamond = document.createElement('div');
+        diamond.classList.add('diamond');
+        diamond.style.left = Math.random() * 100 + "vw";
+        diamond.style.animationDuration = (4 + Math.random() * 4) + "s";
+        diamond.style.width = diamond.style.height = (5 + Math.random() * 10) + "px";
+        document.body.appendChild(diamond);
+      }
+    }
+
+    window.onload = function () {
+      countdown();
+      createDiamonds();
+    };
   </script>
 </head>
 <body>
   <div class="overlay"></div>
+
   <h1>Launching Online Soon</h1>
   <p>Our website is under construction. Sign up to receive updates and to be notified when we launch.</p>
 
@@ -145,10 +193,10 @@
   </div>
 
   <div class="socials">
-    <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp">&#x1F4F1;</a>
-    <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram">&#x1F47E;</a>
-    <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook">&#x1F4F7;</a>
-    <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok">&#x1F3AC;</a>
+    <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
   </div>
 
   <footer>
