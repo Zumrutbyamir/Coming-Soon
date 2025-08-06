@@ -2,8 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Zümrüt by Amir – Launching Soon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zümrüt - Coming Soon</title>
+
+  <!-- ✅ Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-y+mGHh/fA7gYqWc9rg9XW+8GspBQ7yya6wU1yx2loA+Hh7uQvfxALaSzPpW2zHyGkXwQ8YvD2Wz0C2Ix1kSfZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     body {
       margin: 0;
@@ -17,12 +21,12 @@
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      overflow-x: hidden;
       text-align: center;
+      overflow-x: hidden;
     }
 
     .overlay {
-      background-color: rgba(5, 70, 52, 0.8);
+      background-color: rgba(5, 70, 52, 0.85);
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
@@ -73,21 +77,25 @@
       background-color: #b9982f;
     }
 
+    .countdown {
+      font-size: 1.2em;
+      margin: 1em 0;
+    }
+
+    .socials {
+      margin-top: 1.5em;
+    }
+
     .socials a {
-      margin: 0 15px;
+      margin: 0 12px;
       color: #d4af37;
       font-size: 1.8em;
+      text-decoration: none;
       transition: transform 0.3s;
     }
 
     .socials a:hover {
       transform: scale(1.2);
-    }
-
-    .countdown {
-      font-size: 1.2em;
-      margin: 1em 0;
-      color: #f9f6f1;
     }
 
     footer {
@@ -97,7 +105,6 @@
       text-align: center;
       font-size: 0.9em;
       color: #f9f6f1;
-      background: transparent;
     }
 
     @media (max-width: 500px) {
@@ -110,13 +117,13 @@
       }
     }
 
-    /* Falling Diamonds Animation */
+    /* Falling Diamond Animation */
     .diamond {
       position: fixed;
       top: -50px;
       width: 10px;
       height: 10px;
-      background-color: #50c878; /* emerald green */
+      background-color: #50c878;
       transform: rotate(45deg);
       opacity: 0.8;
       animation: fall 8s linear infinite;
@@ -134,6 +141,7 @@
       }
     }
   </style>
+
   <script>
     // Countdown Timer
     function countdown() {
@@ -158,7 +166,7 @@
       }, 1000);
     }
 
-    // Generate Falling Diamonds
+    // Falling Diamonds
     function createDiamonds() {
       for (let i = 0; i < 40; i++) {
         let diamond = document.createElement('div');
@@ -191,15 +199,15 @@
     Launching in <span id="timer">Loading...</span>
   </div>
 
-<div class="socials">
-  <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-  <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-  <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-  <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
-</div>
+  <div class="socials">
+    <a href="https://wa.me/923140432352" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+    <a href="https://www.instagram.com/zumrutbyamir" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/zumrutbyamir" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.tiktok.com/@zumrutbyamir" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a>
+  </div>
 
   <footer>
-    @2006 Zümrüt by Amir. All rights reserved.
+    2006 Zümrüt by Amir. All rights reserved.
   </footer>
 </body>
 </html>
