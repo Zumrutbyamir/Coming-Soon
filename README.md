@@ -200,7 +200,7 @@
   </div>
 
   <footer>
-    2006 Zümrüt by Amir. All rights reserved.
+   © 2006 — Zümrüt by Amir. All Rights Reserved.
   </footer>
 </body>
 </html>
